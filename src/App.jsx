@@ -1,34 +1,3 @@
-// /* eslint-disable no-unused-vars */
-// import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
-// import './App.css';
-// import Weather from './components/Weather';
-// import { useTranslate } from '@tolgee/react';
-// import { LangSelector } from './components/LanguageDropdown'; 
-
-
-// const queryClient = new QueryClient();
-
-// function App() {
-//   const { t } = useTranslate();
-//   return (
-//     <QueryClientProvider client={queryClient}>
-
-//       <div className="flex  flex-col items-center gap-5">
-//         <h1 className='text-5xl text-black font-bold '>{t('app-title')}</h1>
-//         <div className='align-top '> 
-//             <LangSelector />
-//         </div>
-//         <div>
-//             <Weather />
-//         </div>
-//       </div>
-//     </QueryClientProvider>
-//   );
-// }
-
-// export default App;
-
-/* eslint-disable no-unused-vars */
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import './App.css';
 import Weather from './components/Weather';
@@ -44,9 +13,9 @@ function App() {
       <div className="min-h-screen flex flex-row items-start justify-center p-8 gap-8">
         
         {/* Left Section: Header, Summary, and Features */}
-        <aside className="w-1/3 bg-transparent shadow-lg rounded-lg p-6 flex flex-col gap-6 bg-slate-200">
+        <aside className="w-1/3 bg-transparent shadow-lg rounded-lg p-6 flex flex-col gap-6 bg-white">
           <header className="flex flex-col justify-center items-center gap-4">
-            <h1 className="text-4xl font-bold text-gray-800">{t('app-title')}</h1>
+            <h1 className="text-4xl font-bold text-gray-800">Weather App</h1>
             <LangSelector />
           </header>
           <section className="mt-4 text-gray-700 ">
