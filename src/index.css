@@ -21,7 +21,11 @@ body {
   margin: 0;
   display: flex;
   justify-content: center;
-  @apply bg-gradient-to-b from-blue-300 to-blue-500 min-h-screen;
+  background-image: url('/back.jpg');
+  background-size: cover;
+  background-position: center; 
+  background-repeat: no-repeat;
+  height: 100vh;
 }
 
 @media (prefers-color-scheme: light) {
